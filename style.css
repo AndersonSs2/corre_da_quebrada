@@ -1,20 +1,102 @@
-*{
-    margin: 0;
-    border: 0;
-    padding: 0;
-}
-
 body{
     background-color: black;
 }
 
+main{
+    margin: auto;
+    width: 90%;
+    height: auto;
+    background-color: aquamarine;
+}
+
 header{
-    display: flex;
     width: 100%;
     height: 150px;
     background-color: black;
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    border: 1px solid #C8FF00;
+}
+
+#imglogo{
+    position: relative;
+    left: 4%;
+    width: 230px;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    gap: 60px;
+    margin-right: 5%;
+}
+
+.linksheader{
+    text-decoration: none;
+    font-size: 35px;
+    font-family: 'Genos';
+    color: #C8FF00;
+}
+
+.linksheader:hover{
+    transition: 1s;
+    border: 1px solid #C8FF00;
+}
+
+.certificado{
+    height: auto;
+    align-items: center;
+}
+
+.imgcert1{
+    width: 60%;
+}
+
+.imgcert2{
+    width: 40%;
+}
+
+.textocert{
+    width: 30%;
+    position: absolute;
+    font-size: 60px;
+    text-align: center;
+    border: 2px solid #C8FF00;
+    color: white;
+    font-family: 'Genos';
+    font-weight: bold;
+}
+
+section{
+    width: 99.98%;
+    height: 700px;
+    display: flex;
+    justify-content: space-evenly;
+    background-image: url(Imagens/fundoaulas.png);
+}
+
+.tituloaulas{
+    width: 100%;
+    height: 100px;
+    font-size: 25px;
+    color: #C8FF00;
+    text-align: center;
+    background-image: url(Imagens/fundoaulas.png);
+    border: 1px solid #C8FF00;
+    border-bottom: none;
+}
+
+h1{
+    transform: translate(0, 50%);
+    font-family: 'Genos';
+    margin-top: 0;
+}
+
+div{
+    width: 300px;
+    height: max-content;
 }
 
 @font-face {
@@ -24,178 +106,112 @@ header{
     font-style: normal;
 }
 
-#logo{
-    margin-left: 5%;
-    width: 220px;
-    float: left;
-}
-
-ul{
+.altura{
+    height: 290px;
     display: flex;
-    color: white;
-    list-style-type: none;
-    margin-right: 5%;
-}
-
-a{
-    position: relative;
-    margin-right: 100px;
-    color: #C8FF00;
-    font-size: 30px;
-    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
     font-family: 'Genos';
-    z-index: 2;
+    color: #C8FF00;
+    margin-top: 30px;
 }
 
-a:hover{
+img{
+    width: 300px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border: 1px solid #C8FF00;
+    border-top: none;
+}  
+
+.titulo{
+    display: flex;
+    position: relative;
+    margin-top: 0;
+    width: 100%;
+    height: 100px;
+    font-size: 40px;
+    color: #C8FF00;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Genos';
+}
+
+.imgpilates{
+    width: 300px;
+    height: 200px;
+}
+
+.unitapeva{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     border: 1px solid #C8FF00;
 }
 
-#bordasrd{
-    position: absolute;
-    width: 100%;
-    height: 150px;
-    top: 1px;
+.mapa{
+    width: 38%;
+    height: 380px;
+    border-radius: 10px;
 }
 
-article{
+.imgunidade{
+    width: 44%;
+    height: 420px;
+    border: 2px solid #C8FF00;
+}
+
+.unizaira{
+    border: 1px solid #C8FF00;
+    border-top: none;
+    width: 99.98%;
+    height: 450px;
     display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer{
     width: 100%;
+    height: 400px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 650px;
+    border: 1px solid #C8FF00;
 }
 
-#certificado1{
-    top: 0;
-    width: 60%;
+.imgfooter{
+    width: 80px;
+    margin-right: 10px;
 }
 
-#certificado2{
-    position: relative;
-    width: 40%;
-    height: 640px;
-}
-
-#caixatxt{
-    position: absolute;
-    border: 2px solid #C8FF00;
-    width: 35%;
-    text-align: center;
-    font-size: 35px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serifs;
-}
-
-#aulas{
+#caixaimgft{
     display: flex;
-    justify-content: center;
+    width: 400px;
+    justify-content: space-around;
 }
 
-#fundoaula{
-    width: 100%;
-    position: absolute;
-}
-
-h2{
-    position: absolute;
-    color: white;
-    top: 820px;
-    font-size: 35px;
+.txtfooter{
+    font-size: 40px;
+    font-weight: bold;
     font-family: 'Genos';
     color: #C8FF00;
-    width: 100%;
-    text-align: center;
 }
 
-#grupo1{
-    top: 200px;
-    position: relative;
-    width: 100%;
-    height: 800px;
-    z-index: 1;
-    display: flex;
-    justify-content: space-around;
+#setatopo{
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    right: 0;
+    top: 600px;
 }
 
-.caixa1{
-    position: relative;
-    width: 300px;
-    height: 200px;
-    background-color: white;
-}
 
-.caixa2{
-    position: relative;
-    margin-top: 300px;
-    width: 300px;
-    height: 200px;
-    background-color: white;
-}
-
-#grupo2{
-    top: 1400px;
-    position: absolute;
-    width: 100%;
-    height: 800px;
-    z-index: 1;
-    display: flex;
-    justify-content: space-around;
-}
-
-.caixa4{
-    position: absolute;
-    margin-top: 300px;
-    width: 300px;
-    height: 200px;
-    background-color: white;
-    left: 5%;
-}
-
-.caixa5{
-    position: absolute;
-    margin-top: 300px;
-    width: 300px;
-    height: 200px;
-    background-color: white;
-    right: 20%;
-}
-
-#mapa1{
-    top: 150px;
-    position: relative;
-    background-color: #013300;
-    width: 100%;
-    height: 455px;
-}
-
-#mapa2{
-    top: 150px;
-    position: relative;
-    background-color: #013300;
-    width: 100%;
-    height: 455px;
-}
-
-#estmapa1{
-    position:relative;
-    bottom: 20px;
-    border-radius: 10px;
-    width: 40%;
-    height: 400px;
-    left: 80px;
-}
-
-#estmapa2{
-    position:relative;
-    bottom: 20px;
-    border-radius: 10px;
-    width: 40%;
-    height: 400px;
-    left: 80px;
-}
-
-.caixa6{
-    position: relative;
-    right: 2%;
-}
